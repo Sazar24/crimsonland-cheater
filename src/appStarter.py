@@ -1,6 +1,12 @@
-from config import setProjectPath
-setProjectPath()
+# from config import setProjectPath  # type: ignore
+# setProjectPath()
+from injector import Injector
+from src.app.appRunner import App
 
-if __name__ == "__main__": 
-    from app.appRunner import App
-    App().run()
+
+if __name__ == "__main__":
+    iocContainer = Injector()
+    app = iocContainer.get(App)
+
+    # app = App()
+    app.run()

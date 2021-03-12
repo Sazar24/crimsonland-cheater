@@ -4,11 +4,18 @@
   "description": "python-starter",
   "main": "this-is-not-js-project",
   "scripts": {
-    "start": "python src/appStarter.py"
+    "prebuild": "python -m venv venv",
+    "prebuild-2nd-part": "npm install",
+    "prepare-dev--this-is-hint": "%cd%/venv/scripts/activate",
+    "start": "nodemon --exec %cd%/venv/scripts/python.exe -m src.appStarter",
+    "__start-comment": "nodemon nie odpala reloadu gdy python jest odpalony z flagą -m . TBD? "
   },
   "keywords": [
     "python"
   ],
   "author": "cb",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.7"
+  }
 }

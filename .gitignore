@@ -1,2 +1,6 @@
+# libraries:
 /venv
+/node_modules
+
+# tech:
 *__pycache__
