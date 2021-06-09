@@ -1,14 +1,14 @@
 {
-  "name": "boilerplate",
+  "name": "crimsonland-cheater",
   "version": "1.0.0",
-  "description": "python-starter",
+  "description": "crimsonland type'o'shooter cheater",
   "main": "this-is-not-js-project",
   "scripts": {
     "prebuild": "python -m venv venv",
     "prebuild-2nd-part": "npm install",
     "prepare-dev--this-is-hint": "%cd%/venv/scripts/activate",
     "start": "nodemon --exec %cd%/venv/scripts/python.exe -m src.appStarter",
-    "__start-comment": "nodemon nie odpala reloadu gdy python jest odpalony z flagą -m . TBD? "
+    "__start-comment": "nodemon does not reload itself, when python is started with -m flag :( . TBD? "
   },
   "keywords": [
     "python"
